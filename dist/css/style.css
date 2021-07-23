@@ -1,0 +1,22 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.bg-color{
+    background-color: #187875;
+}
+.textPrimary{
+    color: #187875;
+}
+.bgSecondary{
+    background-color: #8bc94d;
+}
+.textSecondary{
+    color: #8bc94d;
+}
+.card{
+    border: none;
+    border-radius: 10px;
+}
+.document .form-group:first-child{
+    margin-left: 8%;
+}
