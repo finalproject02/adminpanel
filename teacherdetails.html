@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin| Dashboard</title>
+    <link rel="shortcut icon" href="images/logo-white.png" type="image/x-icon" />
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <!-- Tempusdominus Bootstrap 4 -->
+    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css" />
+
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader flex-column justify-content-center align-items-center">
+            <img class="animation__shake" src="images/logo-white.png" alt="AdminLTELogo" height="60" width="60">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-light bg-color text-white sticky-top">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Navbar Search -->
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="navbar-search-block">
+                        <form class="form-inline">
+                            <div class="input-group input-group-sm">
+                                <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-navbar" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                    <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                                        <i class="fas fa-times"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">2</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <a href="message.html">
+                                <div class="media">
+                                    <img src="images/jahed.jpg" alt="User Avatar" class="w-25 h-25 mx-2 rounded-circle">
+                                    <div class="media-body">
+                                        <h3 class="dropdown-item-title">
+                                            Md Jahed
+                                        </h3>
+                                        <p class="text-sm">Call me whenever you can...</p>
+                                        <p class="text-sm text-muted"><i class="far fa-clock mr-4"></i> 2 Hours Ago</p>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="message.html" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">5</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">5 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-1"></i> Jahed liked your post
+                            <div class="text-muted text-sm">12 hours</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-1"></i>Tanvir commented your post
+                            <div class="text-muted text-sm">12 hours</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-1"></i> 3 new reports
+                            <div class="text-muted text-sm">2 days</div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="allnotification.html" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <div class="user-panel">
+                <a href="index.html" class="navbar-brand">
+                    <img src="images/logo-white.png" alt="AdminLTE Logo" class="rounded-circle w-25 p-2 m-2 elevation-3"
+                        style="opacity: 1;" />
+                    <span class="text-white font-weight-light">Leading University</span>
+                </a>
+            </div>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/jahed.jpg" class="rounded-circle elevation-2" alt="User Image" />
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Md Jahed</a>
+                        <small class="text-white">Head(acting) Department of CSE</small>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                        data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-item menu-open">
+                            <a href="index.html" class="nav-link active">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>
+                                    Dashboard
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/widgets.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Widgets
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-tree"></i>
+                                <p>
+                                    Notice
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-edit"></i>
+                                <p>
+                                    Forms
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-table"></i>
+                                <p>
+                                    Settings
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-header">EXAMPLES</li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-envelope"></i>
+                                <p>
+                                    Departments
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="cse.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of CSE</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/compose.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of EEE</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of Architecture</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of Civil Eng.</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of Business Admin.</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of Law</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of English</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of Islamic Studies</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept of Public Health</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="pages/mailbox/read-mail.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Dept. of Tourims and Hospitality Management</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon far fa-plus-square"></i>
+                                <p>
+                                    Extras
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            Login & Register v2
+                                            <i class="fas fa-angle-left right"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="pages/examples/login-v2.html" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Login v2</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/examples/register-v2.html" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Register v2</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/examples/forgot-password-v2.html" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Forgot Password v2</p>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="pages/examples/recover-password-v2.html" class="nav-link">
+                                                <i class="far fa-circle nav-icon"></i>
+                                                <p>Recover Password v2</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-search"></i>
+                                <p>
+                                    demo
+                                    <i class="fas fa-angle-left right"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="pages/search/simple.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>demo01</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-header">MULTI LEVEL EXAMPLE</li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-circle nav-icon"></i>
+                                <p>Level 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="nav-icon fas fa-circle"></i>
+                                <p>
+                                    Level 2
+                                    <i class="right fas fa-angle-left"></i>
+                                </p>
+                            </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Level 2</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>
+                                            Level 2
+                                            <i class="right fas fa-angle-left"></i>
+                                        </p>
+                                    </a>
+                                    <ul class="nav nav-treeview">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">
+                                                <i class="far fa-dot-circle nav-icon"></i>
+                                                <p>Level 3</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper bg-light">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">Dashboard</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="cse.html">CSE</a></li>
+                                <li class="breadcrumb-item active">Teacher Details</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+
+            <section>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="card bg-light w-75 shadow rounded my-5">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img class="img-fluid" style="width: 120px;"
+                                            src="images/Prof.-Dr.-AS.-Faruq.jpg" alt="">
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h2>Prof. Dr. AS. Sikder</h2>
+                                                <p>Professor
+                                                    <br>
+                                                    Computer Science & Engineering
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h4>Contact Information</h4>
+                                                <p> <b>Cell Phone: </b>01757584584<br>
+                                                    <b>Email: </b>faruq_cse@lus.ac.bd
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <hr>
+
+                                <div class="areaofstudy my-3">
+                                    <h2>Area of Study</h2>
+                                    <div>
+                                        <p class="font-weight-bold p-underline">Educations: </p>
+                                        <p> 1. DCA, Intec College, Singapore. <br>
+                                            2. DIT, Alpha Beta College, Sydney, Australia. <br>
+                                            3. BIT, Central Queensland University, Queensland, Australia. <br>
+                                            4. MIT, University of Ballarat, Melbourne, Australia. <br>
+                                            5. MBA, University of Ballarat, Melbourne, Australia. <br>
+                                            6. Ph.D., University of Ballarat, Melbourne, Australia. <br>
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <p class="font-weight-bold p-underline">Professional Trainings & Certifications:
+                                        </p>
+                                        <p>1. MCSA-Microsoft Certificate Solutions Associate. <br>
+                                            2. MCSE-Microsoft Certificate Solutions Expert. <br>
+                                            3. OCA-Oracle Certified Associate. <br>
+                                            4. OCP-Oracle Certified Professional. <br>
+                                            5. CCNA-Cisco Certified Network Associate. <br>
+                                            6. CCNP-Cisco Certified Network Professional. <br>
+                                            7. CCNPS-Cisco Certified Network Professional-Security. <br>
+                                            8. CCCA-Cisco Certified CyberOps Associate. <br>
+                                            9. CCE-Cisco Cyber Security Essentials. <br>
+                                            10. RHCSA-Red Hat Certified System Associate <br>
+                                            11. RHCE-Red Hat Certified Engineer. <br>
+                                            12. RHCA-Red Hat Certified Architect. <br>
+                                            13. MTCNA–MikroTik Certified Network Associate. <br>
+                                            14. MTCRE–MikroTik Certified Router Engineer. <br>
+                                            15. MTCSE-MikroTik Certified Security Engineer. <br>
+                                            16. ACSAA-AWS Certified Solutions Architect-Associate. <br>
+                                            17. ACSAP-AWS Certified Solutions Architect-Professional <br>
+                                            18. CEH–Certified Ethical Hacker. <br>
+                                            19. CISA-Certified Information Systems Auditor. <br>
+                                            20. CISSP-Certified Information Systems Security Professional <br>
+                                            21. DMP-Digital Marketing Professional <br>
+
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <p class="font-weight-bold p-underline">Conducted Courses:</p>
+                                        <p>
+                                            1. C Programming. <br>
+                                            2. Object Oriented Programming. <br>
+                                            3 Advanced Java. <br>
+                                            4. Web Programming. <br>
+                                            5. Web Technologies. <br>
+                                            6. Mobile Applications Development. <br>
+                                            7. Python Programming. <br>
+                                            8. Software Engineering. <br>
+                                            9. System Analysis & Design. <br>
+                                            10. Database Management System. <br>
+                                            11. Data Communication. <br>
+                                            12. Advanced Computer Networks. <br>
+                                            13. Advanced Operating System. <br>
+                                            14. Cryptography & Network Security. <br>
+                                            15. Cyber Security & Ethical Hacking. <br>
+                                            16. Information Systems Security. <br>
+                                            17. Cloud Computing. <br>
+                                            18. Advanced Algorithms. <br>
+                                            19. Neural Network & Fuzzy Logic. <br>
+                                            20. Machine Learning. <br>
+                                            21. Big Data & Data Mining. <br>
+                                            22. Data Analytics. <br>
+                                            23. Business Analytics. <br>
+                                            24. Management Information System. <br>
+                                            25. E-Commerce Design & Development. <br>
+                                            26. Advanced Digital Marketing. <br>
+                                            27. Graphic Design & Multimedia <br>
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <p class="font-weight-bold p-underline">Published Books:</p>
+                                        <p>
+                                            1. Core Python Programming, For the Beginners, BDT Publisher-2nd Edition.
+                                            <br>
+                                            2. Advanced Java Programming, Building Java Application, BDT Publisher-2nd
+                                            Edition. <br>
+                                            3. Semantic Web Programming, Building IA & E-Commerce, BDT Publisher-2nd
+                                            Edition. <br>
+                                            4. Advanced Computer Networks, CCNA Labs, BDT Publisher-3rd Edition. <br>
+                                            5. Production Operating System, Hands-on Exam Preparation, BDT Publisher-2nd
+                                            Edition. <br>
+                                            6. Applied Cloud Computing, Methodology & Application, BDT Publisher-2nd
+                                            Edition. <br>
+                                            7. The Complete E-Commerce, Technologies & Applications, BDT Publisher-2nd
+                                            Edition. <br>
+                                            8. Cyber Security & Ethical Hacking, Practical Labs, BDT Publisher-1st
+                                            Edition. <br>
+                                            9. C Easy Programming, BDT Publisher-5th Edition. <br>
+                                            10. Object Oriented Programming C++, Beginner to Advanced, BDT Publisher-4th
+                                            Edition. <br>
+                                            11. The Complete Computer Fundamentals, BDT Publisher-5th Edition. <br>
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <p class="font-weight-bold p-underline">News Paper Articles:</p>
+                                        <p>
+                                            1. “Necessity of Technology in Today’s Educations”, DainikIttefaq on
+                                            27/04/2015. <br>
+                                            2. “Computer Diploma Courses of TokyoHitech”, ProthomAlo on 09/09/2011. <br>
+                                            3. “ICT Revelation is to Change our Economy”, DainikPurbokon on 07/10/2010.
+                                            <br>
+                                            4. “Enthusiastic IT Trainees and Capitalization”, DainikMoktBagla on
+                                            08/03/2014. <br>
+                                            5. “Digital Fair and Internet Week in Jessore”, Daily Gramerkagoj on
+                                            10/07/2015. <br>
+                                            6. “IT alignment to deal with evolving business challenges”, Daily Star on
+                                            27/11/2009. <br>
+                                            7. “Web Technologies for Sustainable Supply-Chain Management, Daily Observer
+                                            on 05/03/2008. <br>
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <p class="font-weight-bold p-underline">Research Interests</p>
+                                        <p>
+                                            1. Bio-Sensing. <br>
+                                            2. Computational Electronics. <br>
+                                            2. Web Engineering. <br>
+                                            3. Web Technologies. <br>
+                                            4. Sensor Networking. <br>
+                                            5. Network Security. <br>
+                                            6. Cyber Security. <br>
+                                            7. Blockchain Technology. <br>
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <p class="font-weight-bold p-underline">Research Papers</p>
+                                        <p>
+                                            Design and Numerical Analysis of Zeonex Based Photonic Crystal Fiber for the
+                                            Applications in Different Types of Communication Networks, Springer,
+                                            December 2020, Multiple Authors. <br>
+                                            “Zeonex based decagonal photonic crystal fiber (D-PCF) in the terahertz
+                                            (THz) band for chemical sensing applications”, Elsevier, Volume 31, December
+                                            2019, 100393, Multiple Authors. <br>
+                                            “Impact of Social Media in Social Life in China”, IJNTR, Volume-6, Issue-1,
+                                            January 2018 Pages 61-66, Multiple Authors. <br>
+                                            “Indigenous Australian Access to Information & Communication Technology to
+                                            trounce Isolated Lifestyle over Cross Culture and Anti Colonization
+                                            Sentiment”, JIT, University of Ballarat, Vol. 29, No. 13, PP 1-6,
+                                            December-2001, Double Authors. <br>
+                                            “Strategic Implementation of Information Technology to regulate and ensure
+                                            fundamental human right of refugees and asylum seekers in Australia.”, JIT,
+                                            University of Ballarat, Vol. 35, No. 7, PP 1-7, November-2002, Single
+                                            Author. <br>
+                                            “Contemporaneous Role of Information and Communication Technology in the
+                                            Australian Banking Sector in Adopting Online Transaction and Mobile
+                                            Banking.”, JIT, University of Ballarat, Vol. 41, No. 19, PP 1-8,
+                                            December-2003, Single Author. <br>
+                                            “The Power of E-Commerce in the Global Trade Industry: A Realistic Approach
+                                            to Expedite Virtual Market Place and Online Shopping from anywhere in the
+                                            World.”, JIT, University of Ballarat, Vol. 48, No. 15, PP 1-9,
+                                            December-2004, Single Author. <br>
+                                            “The Relevance of Enterprise Resource Planning (ERP) Software Systems in
+                                            Providing Help in Management of Enterprises., JIT, University of Ballarat,
+                                            Vol. 57, No. 10, PP 1-10, July-2005, Single Author. <br>
+                                            “An Analysis of Exploring E-Learning Which Offers the Alternative Method for
+                                            Deprived and Inaccessible People to Study Tertiary Education Through the
+                                            Internet.”, JGP-IWT, Vol. 21, PP 1-5, October-2006, Single Author. <br>
+                                            “Strategic Impact of Web Technologies for Sustainable Supply-Chain
+                                            Integration and Agility.” JGP-IWT, Vol. 29, PP 1-6, December-2007, Single
+                                            Author. <br>
+                                            “Web Engineering: New Epoch of Systematic, Disciplined and Legitimate Web
+                                            Application Approach” JGP-IWT, Vol. 35, PP 1-7, November-2008, Single
+                                            Author. <br>
+                                            “UML-based Web Engineering: A Realistic Approach to prevail Interoperability
+                                            Categorization of Model Conversion Techniques” JGP-IWT, Vol. 43, PP 1-8,
+                                            June-2009, Single Author. <br>
+                                            “Web Engineering: A Strategic Approach for Blind and Visually Challenged
+                                            People to Access on the World Wide Web” JGP-IWT, Vol. 50, No. 19, PP 1-5,
+                                            January-2010, Single Author. <br>
+                                            “Web-Based Information Technology for Transparent & Accountable Grassroots
+                                            Student Politics in Bangladesh: A Case Study of Indecent & Corrupted
+                                            Grassroot Student Politics without any Principle or Patriotism”. JGP-IWT,
+                                            Vol. 54, No. 15, PP 1-5, December-2010, Single Author <br>.
+                                            “Designing and Implementing Outcome-Based Curriculum in Bangladesh Technical
+                                            Education Board (BTEB) to Prepare the students to cope with evolving IT
+                                            Industry”. JGP-IWT, Vol. 73, No. 9, PP 1-6, June-2011, Single Author. <br>
+                                            “Cryptocurrency under the Blockchain Technology: Challenges & Opportunities
+                                            to Implement a Cashless Society in Bangladesh to Minimize Corruption and
+                                            Irregularities”. JGP-IWT, Vol. 102, No. 25, PP 1-5, June-2012, Single
+                                            Author. <br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2021 <a href="https://adminlte.io">DynamicDevelopers</a>.</strong>
+            All rights reserved.
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+
+    <!-- .............................nisor line a problem kore, dropdown open oy na eta dile............................. -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="dist/js/adminlte.js"></script>
+    <!-- Boostrap 5 js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
