@@ -29,3 +29,11 @@ body{
     transform: scale(.96);
     transition: all 1s ease;
 }
+.table-light td{
+    vertical-align: middle;
+}
+
+.p-underline{
+    text-decoration: underline !important;
+    margin-bottom: 5px !important;
+}
