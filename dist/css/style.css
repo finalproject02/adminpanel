@@ -26,9 +26,12 @@ body{
     border-radius: 50%;
 }
 .cardhover:hover{
-    transform: scale(.96);
+    transform: scale(.98);
     transition: all 1s ease;
 }
+.colorGray{
+    background-color: rgba(255, 255, 255, 0.815);
+=======
 .table-light td{
     vertical-align: middle;
 }
@@ -37,3 +40,4 @@ body{
     text-decoration: underline !important;
     margin-bottom: 5px !important;
 }
+
